@@ -39,6 +39,8 @@ n = strto.float(formval.trim(), NaN);
 All functions throw exceptions if `str` is not a string or if `errval` is missing. This is to help
 you catch errors early in development. You're not supposed to try-catch these.
 
+### Functions
+
 #### `strto.safeint(str: string, errval: any): (number | errval)`
 
 `strto.safeint` converts a string that apart from digits may only contain an optional leading `-`
