@@ -1,0 +1,17 @@
+{
+  "name": "strto",
+  "version": "0.0.0",
+  "description": "",
+  "main": "strto.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olov/strto.git"
+  },
+  "keywords": [
+  ],
+  "scripts": {
+      "test": "node test.js"
+  },
+  "author": "Olov Lassus <olov.lassus@gmail.com>",
+  "license": "MIT"
+}
