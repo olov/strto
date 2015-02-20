@@ -1,6 +1,6 @@
 {
   "name": "strto",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "strto is a strict string-to-number conversion library",
   "main": "strto.js",
   "repository": {
@@ -8,6 +8,19 @@
     "url": "https://github.com/olov/strto.git"
   },
   "keywords": [
+      "string",
+      "number",
+      "convert",
+      "parse",
+      "atoi",
+      "atof",
+      "atod",
+      "strtol",
+      "strtof",
+      "strtod",
+      "strconv",
+      "parseInt",
+      "parseFloat"
   ],
   "scripts": {
       "test": "node test.js"
