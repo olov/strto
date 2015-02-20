@@ -7,6 +7,34 @@ strto is tiny, adding ~300 bytes to your gzipped payload.
 ## Usage
 `var strto = require("strto"); // or include strto.js in a <script> tag`
 
+#### Examples
+```javascript
+var n = strto.safeint(stringifiedNumber, null);
+if (n !== null) {
+    // n is an integer number in the range [-9007199254740991, 9007199254740991]
+}
+
+// errval can be used as a default value when that fits your code
+n = strto.inexactint(formval.trim(), 0);
+// n is an integer number and it may or may not be outside of range
+// [-9007199254740991, 9007199254740991] thus inexact, even +-Infinity, but never NaN.
+
+// errval can be any value, if you dislike null
+var nil = {toString: function() { bomb }, valueOf: function() { bomb }};
+n = strto.finitefloat(formval.trim(), nil);
+if (n !== nil) {
+    // n is an integer or floating point number, anything except +-Infinity or NaN
+}
+n = strto.float(formval.trim(), nil);
+if (n !== nil) {
+    // n may be any JS number (integer, floating point, +-Infinity and NaN)
+}
+
+// errval can be NaN if you want that monster back
+n = strto.float(formval.trim(), NaN);
+// whatever
+```
+
 #### `strto.safeint(str: string, errval: any): (number | errval)`
 
 `strto.safeint` converts a string that apart from digits may only contain an optional leading `-`
