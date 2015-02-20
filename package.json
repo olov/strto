@@ -1,7 +1,7 @@
 {
   "name": "strto",
   "version": "0.0.0",
-  "description": "",
+  "description": "strto is a strict string-to-number conversion library",
   "main": "strto.js",
   "repository": {
     "type": "git",

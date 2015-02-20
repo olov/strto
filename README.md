@@ -1,5 +1,5 @@
 # strto.js
-A strict string-to-number conversion library. Works in node and browsers.
+strto is a strict string-to-number conversion library. Works in node and browsers.
 
 
 
