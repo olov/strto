@@ -1,5 +1,6 @@
 # strto.js
-strto is a strict string-to-number conversion library. Works in node and browsers.
+strto is a strict string-to-number conversion library that works in node and browsers.
+strto is tiny, adding ~300 bytes to your gzipped payload.
 
 
 
@@ -54,10 +55,10 @@ var strto = require("strto");
 ```
 
 ### Browser
-Clone the repo and include it in a script tag
+Install using npm
 
-    git clone https://github.com/olov/strto.git
+    npm install strto
 
 ```html
-<script src="strto/strto.js"></script>
+<script src="node_modules/strto/strto.min.js"></script>
 ```
