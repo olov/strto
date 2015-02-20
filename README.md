@@ -7,7 +7,7 @@ strto is tiny, adding ~300 bytes to your gzipped payload.
 ## Usage
 `var strto = require("strto"); // or include strto.js in a <script> tag`
 
-#### Examples
+### Examples
 ```javascript
 var n = strto.safeint(stringifiedNumber, null);
 if (n !== null) {
@@ -34,6 +34,10 @@ if (n !== nil) {
 n = strto.float(formval.trim(), NaN);
 // whatever
 ```
+
+### Exceptions
+All functions throw exceptions if `str` is not a string or if `errval` is missing. This is to help
+you catch errors early in development. You're not supposed to try-catch these.
 
 #### `strto.safeint(str: string, errval: any): (number | errval)`
 
