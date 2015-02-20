@@ -44,7 +44,7 @@ you catch errors early in development. You're not supposed to try-catch these.
 #### `strto.safeint(str: string, errval: any): (number | errval)`
 
 `strto.safeint` converts a string that apart from digits may only contain an optional leading `-`
-(no `.`, `+`, whitespace or any other characters). Put another way, `str` must
+(no `.`, `+`, `x`, whitespace or any other characters). Put another way, `str` must
 match `/^-?[0-9]+$/`. If such a string is possible to convert exactly to a JavaScript integer
 number, i.e. it fits within the range `[-9007199254740991, 9007199254740991]`, then that number
 will be returned. In all other cases (be it out of range or invalid string characters), `errval`
