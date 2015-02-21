@@ -23,7 +23,7 @@ var strto = (function() {
             return errval;
         }
         var v = parseInt(str, 10);
-        return (v > 9007199254740991 || v < -9007199254740991) ? errval : ((v === 0) ? (v | 0) : v);
+        return (v > 9007199254740991 || v < -9007199254740991) ? errval : ((v === 0) ? 0 : v);
     }
 
     function inexactint(str, errval) {
@@ -37,7 +37,7 @@ var strto = (function() {
             return errval;
         }
         var v = parseInt(str, 10);
-        return (v === 0) ? (v | 0) : v;
+        return (v === 0) ? 0 : v;
     }
 
     function finitefloat(str, errval) {
